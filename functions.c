@@ -593,7 +593,7 @@ void suascc(){
 
 
 
-void suangaythangnam(int size){
+void suangaythangnam(){
 	loadFile();	 
 	int ngaymoi;
 	int thangmoi;
@@ -662,13 +662,17 @@ void sdtcc(){
 void chinhsua(){
 int cansua;
 	do {
-		printf("\n1.ten ");
-		printf("\n2. so can cuoc ");
-		printf("\n3.ngay thang nam sinh");
-		printf("\n4.gmail ");
-		printf("\n5.so dien thoai");
-		printf("\n6.thoat");
-		printf("\nlua chon:");
+printf("+---------------------------------+\n");
+    printf("|           MENU TUY CHON        |\n");
+    printf("+---------------------------------+\n");
+    printf("| 1. Ten                         |\n");
+    printf("| 2. So can cuoc                 |\n");
+    printf("| 3. Ngay thang nam sinh         |\n");
+    printf("| 4. Gmail                       |\n");
+    printf("| 5. So dien thoai               |\n");
+    printf("| 6. Quay lai                    |\n");
+    printf("+---------------------------------+\n");
+    printf("Hay nhap lua chon cua ban: ");
 		scanf("%d",&cansua);
 	switch(cansua){
 		case 1:
@@ -683,7 +687,7 @@ int cansua;
 			break;
 		case 3:
 			system("clear || cls");
-			suangaythangnam(size);
+			suangaythangnam();
 			luuFile();
 			break;
 		case 4:
@@ -698,7 +702,7 @@ int cansua;
 			break;
 		case 6:
 			system("clear || cls");
-			printf("da thoat");
+			menuchokhachhang();
 		break;
 		default:
            printf("Lua chon khong hop le. Vui long chon lai.\n");
@@ -748,10 +752,14 @@ printf("+----+----------------+-------------------+--------------------+--------
 void menuchokhachhang(){
 int lc;
    do{
-	 	printf("\n1.thong tin");
-		printf("\n2.doi mat khau");
-	 	printf("\n3.chinh sua thong tin ca nhan");
-		 printf("\nlua chon:");
+	printf("+----------------------------------+\n");
+    printf("|         MENU TUY CHON            |\n");
+    printf("+----------------------------------+\n");
+    printf("| 1. Thong tin                     |\n");
+    printf("| 2. Doi mat khau                  |\n");
+    printf("| 3. Chinh sua thong tin ca nhan   |\n");
+    printf("+----------------------------------+\n");
+    printf("Lua chon: ");
 	 	scanf("%d",&lc);
 	 	getchar();
 	switch(lc){
@@ -773,10 +781,3 @@ int lc;
    }while(lc!=3);
 }
 	
-
-
-
-	
-	
-
-
